@@ -1,0 +1,14 @@
+.header {
+    width: 100vw;
+    height: 70px;
+    background-color: rgba(237, 87, 87, 0.7);
+    -moz-box-shadow: 10px 5px 5px gray;
+    -webkit-box-shadow: 10px 5px 5px gray;
+    box-shadow: 10px 5px 5px gray;
+    display: flex;
+    align-items: center;
+    &__title {
+        color: #fff;
+        margin-left: 5%;
+    }
+}

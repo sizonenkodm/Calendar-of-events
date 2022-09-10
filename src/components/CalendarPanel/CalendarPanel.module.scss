@@ -1,0 +1,65 @@
+@mixin dayBackground($height, $width, $color, $bc, $br, $bs, $border, $cursor) {
+    height: $height;
+    width: $width;
+    color: $color;
+    background-color: $bc;
+    -moz-border-radius: $br;
+    -webkit-border-radius: $br;
+    border-radius: $br;
+    -moz-box-shadow: $bs;
+    -webkit-box-shadow: $bs;
+    box-shadow: $bs;
+    border: $border;
+    cursor: $cursor;
+}
+
+.container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel {
+    width: 90%;
+    max-width: 1200px;
+    height: 40px;
+    margin: 50px auto 0;
+    display: flex;
+    justify-content: center;
+    &__monthSwitch {
+        height: 100%;
+        width: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & h3 {
+            display: inline-block;
+            height: 60%;
+            color: #606268;
+        }
+        &_container {
+            height: 100%;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    &__datePicker {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__button {
+        @include dayBackground(80%, 40px, #fff, rgba(237, 87, 87, 0.7), 25px, 3px 2px 2px gray, none, pointer);
+        font-weight: 900;
+        &_switch {
+            @include dayBackground(80%, 20px, #fff, rgba(237, 87, 87, 0.7), 25px, 3px 2px 2px gray, none, pointer);
+        }
+    }
+}

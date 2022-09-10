@@ -1,0 +1,23 @@
+.container {
+    width: 90%;
+    max-width: 1200px;
+    height: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.month {
+    width: 90%;
+    height: 90%;
+
+    -moz-box-shadow: 10px 0px 10px 5px gray;
+    -webkit-box-shadow: 10px 0px 10px 5px gray;
+    box-shadow: 10px 0px 10px 5px gray;
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 5px;
+}
