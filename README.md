@@ -14,7 +14,7 @@ Main script for developing:
 
 Runs the app and the server in the development mode at the same time.\
 Open [http://localhost:3000](http://localhost:3000) to view app in your browser.
-Open [http://localhost:3001](http://localhost:9001/tasks) to view data from api.json in your browser.
+Open [http://localhost:9001](http://localhost:9001/tasks) to view data from api.json in your browser.
 
 
 
@@ -36,7 +36,7 @@ You may also see any lint errors in the console.
 ### `npm run server`
 
 Runs the server.\
-Open [http://localhost:3001](http://localhost:9001/tasks) to view data from api.json in your browser.
+Open [http://localhost:9001](http://localhost:9001/tasks) to view data from api.json in your browser.
 
 
 
